@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Breed extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'size',
+        'origin',
+        'group'
+    ];
 }
