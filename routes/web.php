@@ -16,4 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/breed/create', [BreedController::class, 'create'])->name('breed.create');
 Route::get('/breed/{id}', [BreedController::class, 'show'])->name('breed.show');
+Route::get('/breed/store', [BreedController::class, 'store'])->name('breed.store');

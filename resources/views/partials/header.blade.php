@@ -3,6 +3,6 @@
         <h1>
             Dog's Breed
         </h1>
-        <a href="#">New breed</a>
+        <a href="/breed/create">New breed</a>
     </div>
 </header>
