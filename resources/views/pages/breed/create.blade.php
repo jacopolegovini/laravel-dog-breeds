@@ -23,7 +23,8 @@
             <label for="group">Group:</label>
             <input type="group" class="form-control" id="group">
           </div>
-          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+          <button type="submit" class="btn btn-primary mt-3">Create</button>
+          <button type="reset" class="btn btn-warning mt-3">Reset Field</button>
     </form>
 </main>
 @endsection

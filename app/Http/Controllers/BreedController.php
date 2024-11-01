@@ -18,9 +18,10 @@ class BreedController extends Controller
         return view('pages.breed.create');
     }
 
-    public function store(string $id)
+    public function store(Request $request)
     {
-        $breeds = Breed::findOrFail($id);
-        return redirect('pages.home', compact('breeds'));
+        $breeds = Breed::create($request);
+
+        return redirect()->route('home', ['id' => $breeds->id]);
     }
 }
