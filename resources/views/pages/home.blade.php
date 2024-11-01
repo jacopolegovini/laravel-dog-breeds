@@ -36,6 +36,11 @@
                 <td>
                     {{$breed->group}}
                 </td>
+                <td>
+                    <a href="/breed/{{$breed->id}}" class="btn btn-sm btn-primary me-2">Show</a>
+                    <a href="#" class="btn btn-sm btn-success me-2">Edit</a>
+                    <a href="#" class="btn btn-sm btn-warning me-2">Delete</a>
+                </td>
                 @empty
                 <div class="empty-table">
                     The dogs run out...

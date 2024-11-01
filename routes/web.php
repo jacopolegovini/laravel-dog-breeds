@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BreedController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/breed/{id}', [BreedController::class, 'show'])->name('breed.show');
