@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Breed;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -11,6 +12,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.home');
+        $breeds = Breed::all();
+        return view('pages.home', compact('breeds'));
     }
 }
